@@ -1,6 +1,6 @@
 # wise-auth
 
-> 智隆认证登陆组件
+> 认证登陆组件
 
 ## 引用
 
@@ -63,13 +63,13 @@
                                          :redirect-uri  "http://127.0.0.1:3449/"
                                          :scope         "simple"
                                          :client-name   "hrms"}}
-             :service    "http://localhost:3000/"})
+             :service    "http://127.0.0.1:3000/"})
 ```
 
 2. 使用
 
 ```clojure
-;; 对接智隆oauth2认证登陆
+;; 对接oauth2认证登陆
 (defn logout []
   (auth/oauth-logout config))
 
